@@ -1,0 +1,105 @@
+.root {
+    highlight: #569CD6;
+    window-background: #1b1b1b;
+    pane-color: #1E1E1E;
+    pane-border-color: #2A2A2A;
+    text-fill: #C8C8C8;
+    text-greyed: #525252;
+    selection-color: #3e5670;
+}
+
+/* STOP ICON */
+.stop-icon .octagon {
+    -fx-fill: #D25252;
+}
+.stop-icon .label {
+    -fx-text-fill: window-background;
+    -fx-font-size: 6px;
+}
+.stop-icon:bj-large .octagon {
+    -fx-stroke: black;
+    -fx-stroke-type: inside;
+    -fx-stroke-width: 1;
+}
+.stop-icon:bj-large .label {
+    -fx-font-size: 10px;
+}
+
+/* BUTTON */
+.button {
+    -fx-background-color: pane-color;
+    -fx-border-color: pane-border-color;
+    -fx-border-width: 1px;
+    -fx-border-radius: 0px;
+    -fx-text-fill: text-fill;
+
+    -fx-cursor: hand;
+}
+.button * {
+    -fx-text-fill: text-fill;
+}
+.button SVGPath {
+    -fx-stroke: text-fill;
+}
+.button:hover {
+    -fx-border-color: highlight;
+    -fx-text-fill: highlight;
+}
+
+/* COMBO BOX */
+.combo-box {
+    -fx-background-color: pane-color;
+}
+.combo-box .label {
+    -fx-text-fill: text-fill;
+}
+.combo-box .list-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: -fx-text-base-color;
+    -fx-padding: 3 0 2 7;
+    -fx-cell-size: 1.66667em; 
+
+    -fx-text-fill: text-fill;
+}
+
+.combo-box-popup .list-view {
+    -fx-background-color: pane-border-color, pane-color;
+    -fx-background-insets: 0, 1;
+}    
+
+.combo-box-popup .list-view .list-cell {
+    -fx-padding: 4 0 4 5;
+    -fx-background-color: transparent;
+}
+
+.combo-box-popup .list-view .list-cell:filled:selected, .combo-box-popup .list-view .list-cell:filled:selected:hover {
+    -fx-background: -fx-accent;
+    -fx-background-color: highlight;
+    -fx-text-fill: text-fill;
+}
+
+.combo-box-popup .list-view .list-cell:filled:hover {
+    -fx-background-color: pane-border-color;
+    -fx-text-fill: text-fill;
+}
+
+.combo-box-base  {
+    -fx-background-color: transparent, transparent, pane-border-color, pane-color;
+    -fx-background-radius: 0px;
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-padding: 0;
+    -fx-cursor: hand;
+}
+
+.combo-box-base:hover {
+    -fx-background-color: pane-border-color;
+}
+
+.combo-box-base:disabled {
+    -fx-opacity: .4;
+}
+
+.combo-box .arrow {
+    /* -fx-color: ; */
+    -fx-background-color: text-greyed;
+}

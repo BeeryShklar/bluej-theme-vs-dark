@@ -1,0 +1,26 @@
+.editor-menubar {
+    -fx-font-size: 10pt;
+    -fx-font-family: System;
+    -fx-background-color: window-background;
+}
+.context-menu {
+    -fx-background-color: pane-color;
+    -fx-border-color: pane-border-color;
+}
+.separator-menu-item {
+    -fx-background-color: red;
+}
+.menu-item {
+    -fx-background-color: transparent;
+}
+.menu-item:hover {
+    -fx-background-color: highlight;
+}
+.editor-menubar .label {
+    -fx-text-fill: text-fill;
+}
+
+.line-numbers-context-menu {
+    -fx-font-size: 15;
+    -fx-font-family: System;
+}

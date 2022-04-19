@@ -1,0 +1,44 @@
+/*
+.terminal .virtual-flow {
+    -fx-gravity: rear;
+}
+*/
+/* .terminal {
+    -fx-background-color: black;
+} */
+.terminal-split {
+    -fx-orientation: vertical;
+}
+.terminal-output {
+    -fx-fill: #C8C8C8;
+}
+.terminal-input {
+    -fx-fill: #3399FF;
+}
+.terminal-method-record {
+    -fx-fill: #BD63C5;
+}
+.terminal-error {
+    -fx-fill: #D25252;
+}
+.terminal-stack-link {
+    -fx-fill: #D25252;
+    -rtfx-underline-color: #D25252;
+    -rtfx-underline-width: 2;
+    -fx-cursor: hand;
+}
+.terminal-stack-foreign {
+    -fx-fill: hsb(0, 0%, 30%);
+}
+
+/* Show prompt text even when we are focused: */
+.terminal-input-field {
+    -fx-background-color: #2A2A2A;
+    -fx-prompt-text-fill: #7F7F7F;
+    -fx-text-fill: #C8C8C8
+}
+
+/* Slightly darker than white to make input field stand out: */
+.terminal, .terminal-error {
+    -fx-background-color: #1E1E1E;
+}
